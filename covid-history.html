@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Web Assignment</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--    google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <!--    google fonts-->
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <div class="main-container">
+        
+        <section id="header">
+            <div class="container">
+                <div class="nav-row">
+                    <div class="col-12">
+                        <ul>
+                            <li><a href="index.html" >Home</a></li>
+                            <li><a href="cases.html">Latest news</a></li>
+                            <li><a href="country-cases.html">Country-cases</a></li>
+                            <li><a href="covid-precautions.html">Precautions</a></li>
+                            <li><a href="covid-responsibility.html">Our Responsibilities</a></li>
+                            <li><a href="covid-history.html"  class="active">How started</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+       <section id="inner-banner">
+            <div class="container">
+                <div class="overlay">
+                    <div id="breadcrumbs"> <a href="index.html">Home</a> > <a href="covid-history.html">Covid History </a> </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="information">
+            <div class="container mt-5">
+               <img src="images/covid-start.jpg" alt=""> <br> <br> <br>
+                <div class="info-row">
+                    <h1>How did coronavirus start and where did it come from? </h1>
+                    <div class="info-col-12 mt-5">
+                        <p>
+                        Experts say SARS-CoV-2 originated in bats. That’s also how the coronaviruses behind Middle East respiratory syndrome (MERS) and severe acute respiratory syndrome (SARS) got started.
+<br> <br>
+SARS-CoV-2 made the jump to humans at one of Wuhan’s open-air “wet markets.” They’re where customers buy fresh meat and fish, including animals that are killed on the spot.
+<br> <br>
+Some wet markets sell wild or banned species like cobras, wild boars, and raccoon dogs. Crowded conditions can let viruses from different animals swap genes. Sometimes the virus changes so much it can start to infect and spread among people.
+                        <br> <br>
+
+Still, the Wuhan market didn’t sell bats at the time of the outbreak. That’s why early suspicion also fell on pangolins, also called scaly anteaters, which are sold illegally in some markets in China. Some coronaviruses that infect pangolins are similar to SARS-CoV-2.
+<br> <br>
+As SARS-CoV-2 spread both inside and outside China, it infected people who have had no direct contact with animals. That meant the virus is transmitted from one human to another. It’s now spreading in the U.S. and around the globe, meaning that people are unwittingly catching and passing on the coronavirus. This growing worldwide transmission is what is now a pandemic.
+
+
+                          </p>
+                                            </div>
+                    
+                </div>
+                
+            </div>
+        </section>
+        <br>
+        <br>
+        <section id="footer">
+            <div class="container mt-5">
+                <div class="footer-row mt-3">
+                    <div class="footer-column">
+                        <div class="footer-about ">
+                           <h3>About us</h3> <br>
+                            <p>We are a non-profit based
+                                <br>organization providing information related to Covid-19</p>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                       <h3>Social Media</h3> <br>
+                        <div class="social">
+                            <ul>
+                                <li>
+                                    <a href=""> <img src="images/facebook.png" alt=""> </a>
+                                </li>
+                                <li>
+                                    <a href=""> <img src="images/twitter.png" alt=""> </a>
+                                </li>
+                                <li>
+                                    <a href=""> <img src="images/linkedin.png" alt=""> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <div class="sitemap">
+                           <h3>Sitemap</h3>
+                           <br>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="contact.html">Contact us</a></li>
+                                <li><a href="covid-history.html">How it started</a></li>
+                                <li><a href="country-cases.html">Country wise cases</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            }
+            else {
+                mybutton.style.display = "none";
+            }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+    
+</body>
+
+</html>

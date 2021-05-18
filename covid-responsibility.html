@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Web Assignment</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--    google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <!--    google fonts-->
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <div class="main-container">
+        
+        <section id="header">
+            <div class="container">
+                <div class="nav-row">
+                    <div class="col-12">
+                        <ul>
+                            <li><a href="index.html" >Home</a></li>
+                            <li><a href="cases.html">Latest news</a></li>
+                            <li><a href="country-cases.html">Country-cases</a></li>
+                            <li><a href="covid-precautions.html">Precautions</a></li>
+                            <li><a href="covid-responsibility.html" class="active">Our Responsibilities</a></li>
+                            <li><a href="covid-history.html">How started</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+       <section id="inner-banner">
+            <div class="container">
+                <div class="overlay">
+                    <div id="breadcrumbs"> <a href="index.html">Home</a> > <a href="covid-responsibility.html">Our Responsibilities </a> </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="information">
+            <div class="container mt-5">
+               <img src="images/social.PNG" alt=""> <br> <br> <br>
+                <div class="info-row">
+                    <h1>What are our Responsibilities now a days </h1>
+                    <div class="info-col-12 mt-5">
+                        <p>
+                        When you’re young and healthy, your risk of developing severe illness is lower. But young people play an important role in stopping the spread of the COVID-19 coronavirus and keeping those who are most vulnerable from getting sick. It’s everyone’s responsibility. <br> <br>
+
+Even though the danger of COVID-19 may be greater for older generations, young people are just as likely to become infected as any other age group. Whether they get sick or remain asymptomatic, they are spreading the virus. There are things they can do to slow the spread to protect hospitals from being overwhelmed and to make a difference in their community.
+                          </p>
+                        <h2 class="mt-3">Tips for people who teach and volunteer with youth</h2>
+                        <br>
+
+                        <br>
+                        <ul>
+                            <li> > Use the pandemic to help teach young people to be good citizens. Create ways they can contribute and make a difference for others.
+</li>
+                            <br>
+                            <li> > Brain science reminds us that adolescents’ frontal lobes are still developing, which means that skills like impulse control, delayed gratification, and realizing the consequences of actions are not fully in place.
+</li>
+                            <br>
+                            <li> > Some of these practices have been politicized. Stick to facts and trusted information.
+Set a good example by modeling these practices yourself.</li>
+                            <br>
+                                                    </ul>
+                    </div>
+                    
+                </div>
+                <div class="info-row mt-5">
+                    <h2>Some Freequently Askes Questions</h2>
+
+                    <div class="info-col-12 mt-5">
+
+<button class="accordion">Covid-19 Latest news</button>
+<div class="panel">
+  <p>To read latest news about Covid-19, kindly visit this page. <a href="cases.html" class="anchor-class">Click me</a></p>
+</div>
+
+<button class="accordion">Country-wise Covid cases</button>
+<div class="panel">
+  <p>To read Covid cases Country wise, kindly visit this page. <a href="country-cases.html" class="anchor-class">Click me</a></p>
+</div>
+
+<button class="accordion">Covid-19 brief History</button>
+<div class="panel">
+  <p>To read Covid-19 brief history, kindly visit this page. <a href="covid-history.html" class="anchor-class">Click me</a></p>
+</div>
+
+
+                   
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <section id="footer">
+            <div class="container mt-5">
+                <div class="footer-row mt-3">
+                    <div class="footer-column">
+                        <div class="footer-about ">
+                           <h3>About us</h3> <br>
+                            <p>We are a non-profit based
+                                <br>organization providing information related to Covid-19</p>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                       <h3>Social Media</h3> <br>
+                        <div class="social">
+                            <ul>
+                                <li>
+                                    <a href=""> <img src="images/facebook.png" alt=""> </a>
+                                </li>
+                                <li>
+                                    <a href=""> <img src="images/twitter.png" alt=""> </a>
+                                </li>
+                                <li>
+                                    <a href=""> <img src="images/linkedin.png" alt=""> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <div class="sitemap">
+                           <h3>Sitemap</h3>
+                           <br>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="contact.html">Contact us</a></li>
+                                <li><a href="covid-history.html">How it started</a></li>
+                                <li><a href="country-cases.html">Country wise cases</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            }
+            else {
+                mybutton.style.display = "none";
+            }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+    
+</body>
+
+</html>

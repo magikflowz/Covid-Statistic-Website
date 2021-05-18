@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Web Assignment</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--    google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <!--    google fonts-->
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <div class="main-container">
+        <section id="header">
+            <div class="container">
+                <div class="nav-row">
+                    <div class="col-12">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="cases.html">Latest news</a></li>
+                            <li><a href="country-cases.html"  class="active">Country-cases</a></li>
+                            <li><a href="covid-precautions.html">Precautions</a></li>
+                            <li><a href="covid-responsibility.html">Our Responsibilities</a></li>
+                            <li><a href="covid-history.html">How started</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="inner-banner">
+            <div class="container">
+                <div class="overlay">
+                    <div id="breadcrumbs"> <a href="index.html">Home</a> > <a href="country-cases.html">Country Cases </a> </div>
+                </div>
+            </div>
+        </section>
+        <section id="information">
+            <div class="container mt-5">
+                <div class="info-row ">
+                    <h1>Covid-19 Latest Cases around the Globe</h1> <br> <br>
+<table id="table">
+  <tr>
+    <th>Country</th>
+    <th>Total Cases</th>
+    <th>Recovered Patients</th>
+    <th>Total Deaths</th>
+  </tr>
+ 
+  <tr>
+    <td>United States</td>
+    <td>32,983,695</td>
+    <td>32,395,358</td>
+    <td>588,337</td>
+  </tr>
+  
+    <tr>
+    <td>Brazil</td>
+    <td>14,523,807</td>
+    <td>14,125,464</td>
+    <td>398,343</td>
+  </tr>
+  
+    <tr>
+    <td>France</td>
+    <td>5,565,852</td>
+    <td>5461934</td>
+    <td>103,918</td>
+  </tr>
+  
+    <tr>
+    <td>Russia</td>
+    <td>4,796,557</td>
+    <td>4,686,826</td>
+    <td>109,731</td>
+  </tr>
+  
+    <tr>
+    <td>Turkey</td>
+    <td>4,751,026</td>
+    <td>4,711,628</td>
+    <td>39,398</td>
+  </tr>
+  
+  
+    <tr>
+    <td>India</td>
+    <td>18,376,524</td>
+    <td>18171692</td>
+    <td>204,832</td>
+  </tr>
+  
+    <tr>
+    <td>United Kingdom</td>
+    <td>4,411,797</td>
+    <td>4,284,317</td>
+    <td>127,480</td>
+  </tr>
+  
+
+</table>
+                </div>
+                
+                </div>
+        </section>
+        <br>
+        <br>
+        <section id="footer">
+            <div class="container mt-5">
+                <div class="footer-row mt-3">
+                    <div class="footer-column">
+                        <div class="footer-about ">
+                           <h3>About us</h3> <br>
+                            <p>We are a non-profit based
+                                <br>organization providing information related to Covid-19</p>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                       <h3>Social Media</h3> <br>
+                        <div class="social">
+                            <ul>
+                                <li>
+                                    <a href=""> <img src="images/facebook.png" alt=""> </a>
+                                </li>
+                                <li>
+                                    <a href=""> <img src="images/twitter.png" alt=""> </a>
+                                </li>
+                                <li>
+                                    <a href=""> <img src="images/linkedin.png" alt=""> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <div class="sitemap">
+                           <h3>Sitemap</h3>
+                           <br>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="contact.html">Contact us</a></li>
+                                <li><a href="covid-history.html">How it started</a></li>
+                                <li><a href="country-cases.html">Country wise cases</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            }
+            else {
+                mybutton.style.display = "none";
+            }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>

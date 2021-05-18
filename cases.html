@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Web Assignment</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--    google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <!--    google fonts-->
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <div class="main-container">
+        <section id="header">
+            <div class="container">
+                <div class="nav-row">
+                    <div class="col-12">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="cases.html" class="active">Latest news</a></li>
+                            <li><a href="country-cases.html">Country-cases</a></li>
+                            <li><a href="covid-precautions.html">Precautions</a></li>
+                            <li><a href="covid-responsibility.html">Our Responsibilities</a></li>
+                            <li><a href="covid-history.html">How started</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="inner-banner">
+            <div class="container">
+                <div class="overlay">
+                    <div id="breadcrumbs"> <a href="index.html">Home</a> > <a href="cases.html">Latest News </a> </div>
+                </div>
+            </div>
+        </section>
+        <section id="information">
+            <div class="container mt-5">
+                <div class="info-row ">
+                    <h1>Covid-19 Latest News</h1>
+                    <iframe class="mt-4" width="100%" height="400" src="https://www.youtube.com/embed/0D-B9NeJ8wo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <br>
+                <br>
+                <h2>To read latest news about Covid-19 around the globe, click following link</h2>
+                <br> <a class="anchor-class" href="https://www.google.com/search?q=bbc+news+covid+latest+news&sxsrf=ALeKk02Y-kWI8rfYNJW8qYwt9B5OUS3qgw%3A1619692419354&source=hp&ei=g4uKYKPGE4K9lwSE6o7YBg&iflsig=AINFCbYAAAAAYIqZk2ZuPLXfXB-uRO9nJD3s_tZ8oUIN&oq=bbc+news+covid+latest+news&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEMkDMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB46CAgAELEDEIMBOgUIABCxAzoLCAAQsQMQgwEQyQM6BQgAEJIDOgUILhCxAzoCCAA6BQgAEMQCOgkIABDJAxAWEB5QG1jfN2CTOWgAcAB4AIAB9AKIAdYykgEGMi0xOC41mAEAoAEBqgEHZ3dzLXdpeg&sclient=gws-wiz&ved=0ahUKEwjjk7K6oKPwAhWC3oUKHQS1A2sQ4dUDCAc&uact=5" target="_blank">Click me</a> </div>
+        </section>
+        <br>
+        <br>
+        <section id="footer">
+            <div class="container mt-5">
+                <div class="footer-row mt-3">
+                    <div class="footer-column">
+                        <div class="footer-about ">
+                           <h3>About us</h3> <br>
+                            <p>We are a non-profit based
+                                <br>organization providing information related to Covid-19</p>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                       <h3>Social Media</h3> <br>
+                        <div class="social">
+                            <ul>
+                                <li>
+                                    <a href=""> <img src="images/facebook.png" alt=""> </a>
+                                </li>
+                                <li>
+                                    <a href=""> <img src="images/twitter.png" alt=""> </a>
+                                </li>
+                                <li>
+                                    <a href=""> <img src="images/linkedin.png" alt=""> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <div class="sitemap">
+                           <h3>Sitemap</h3>
+                           <br>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="contact.html">Contact us</a></li>
+                                <li><a href="covid-history.html">How it started</a></li>
+                                <li><a href="country-cases.html">Country wise cases</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            }
+            else {
+                mybutton.style.display = "none";
+            }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>

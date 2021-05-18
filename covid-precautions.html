@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Web Assignment</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--    google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <!--    google fonts-->
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <div class="main-container">
+        <section id="header">
+            <div class="container">
+                <div class="nav-row">
+                    <div class="col-12">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="cases.html">Latest news</a></li>
+                            <li><a href="country-cases.html">Country-cases</a></li>
+                            <li><a href="covid-precautions.html"  class="active">Precautions</a></li>
+                            <li><a href="covid-responsibility.html">Our Responsibilities</a></li>
+                            <li><a href="covid-history.html">How started</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="inner-banner">
+            <div class="container">
+                <div class="overlay">
+                    <div id="breadcrumbs"> <a href="index.html">Home</a> > <a href="covid-precautions.html">Latest News </a> </div>
+                </div>
+            </div>
+        </section>
+        <section id="information">
+            <div class="container mt-5">
+                <div class="info-row ">
+                    <h1> How to stay safe from Covid-19 </h1> <br> <br>
+                    <h4 class="covid-stay-safe">1. Wear a mask</h4>
+                    <ul>
+                        <li>> Everyone 2 years and older should wear masks in public.</li>
+                        <li>> Masks should be worn in addition to staying at least 6 feet apart, especially around people who don’t live with you.</li>
+                        <li>> Wash your hands or use hand sanitizer before putting on your mask.</li>
+                        <li>> Wear your mask over your nose and mouth and secure it under your chin.</li>
+                        <li>> Fit the mask snugly against the sides of your face, slipping the loops over your ears or tying the strings behind your head</li>
+                    </ul>
+                    <br> <br>
+                    <h4 class="covid-stay-safe">2. Stay 6 feet away from others</h4>
+                    <ul>
+                    <li>> Avoid close contact with people who are sick.
+If possible, maintain 6 feet between the person who is sick and other household members.</li>
+                   <li>> Put 6 feet of distance between yourself and people who don’t live in your household.</li>
+                   <li>> Remember that some people without symptoms may be able to spread virus.</li>
+                   <li>> Keeping distance from others is especially important for people who are at higher risk of getting very sick.</li>
+                    </ul>
+                    <br> <br>
+                    <h4 class="covid-stay-safe">3. Wash your hands often</h4>
+                    <ul>
+                        <li>> Wash your hands often with soap and water for at least 20 seconds especially after you have been in a public place, or after blowing your nose, coughing, or sneezing.</li>
+                        <li>> If soap and water are not readily available, use a hand sanitizer that contains at least 60% alcohol. Cover all surfaces of your hands and rub them together until they feel dry.</li>
+                        <li>> Avoid touching your eyes, nose, and mouth with unwashed hands.</li>
+                       
+                    </ul>
+                    <br> <br>
+                    <h4 class="covid-stay-safe">4. Monitor your health daily</h4>
+                    <ul>
+                        <li>> Be alert for symptoms. Watch for fever, cough, shortness of breath, or other symptoms of COVID-19.</li>
+                        <li>> Take your temperature if symptoms develop.</li>
+                       
+                    </ul>
+                </div>
+                
+ </div>
+        </section>
+        <br>
+        <br>
+        <section id="footer">
+            <div class="container mt-5">
+                <div class="footer-row mt-3">
+                    <div class="footer-column">
+                        <div class="footer-about ">
+                           <h3>About us</h3> <br>
+                            <p>We are a non-profit based
+                                <br>organization providing information related to Covid-19</p>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                       <h3>Social Media</h3> <br>
+                        <div class="social">
+                            <ul>
+                                <li>
+                                    <a href=""> <img src="images/facebook.png" alt=""> </a>
+                                </li>
+                                <li>
+                                    <a href=""> <img src="images/twitter.png" alt=""> </a>
+                                </li>
+                                <li>
+                                    <a href=""> <img src="images/linkedin.png" alt=""> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <div class="sitemap">
+                           <h3>Sitemap</h3>
+                           <br>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="contact.html">Contact us</a></li>
+                                <li><a href="covid-history.html">How it started</a></li>
+                                <li><a href="country-cases.html">Country wise cases</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            }
+            else {
+                mybutton.style.display = "none";
+            }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>
